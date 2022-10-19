@@ -25,7 +25,7 @@ impl Reef {
     /**
      * Adds a prey to the reef.
      *
-     * Box is treated like &, so this function takes ownership of the boxed prey.
+     * This function takes ownership of the boxed prey.
      */
     pub fn add_prey(&mut self, prey: Box<dyn Prey>) {
         unimplemented!();
@@ -34,7 +34,7 @@ impl Reef {
     /**
      * Returns the next available prey.
      *
-     * Box is treated like &, so the callee of this function now owns the boxed prey.
+     * The callee of this function receives ownership of the boxed prey.
      */
     pub fn take_prey(&mut self) -> Option<Box<dyn Prey>> {
         unimplemented!();
