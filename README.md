@@ -104,7 +104,7 @@ Then, implement the missing functions in __`beach.rs`__:
   - `add_crab`: adds a `Crab` to the beach.
   - `get_crab`: returns a reference to a `Crab` at the given index.
   - `get_fastest_crab`: returns `None` if the beach is empty. Otherwise, return `Some` of a reference to the `Crab` with the highest `speed`.
-  - `breed_crabs`: uses the functions in `genetics` to breed two crabs, resulting in a new `Crab`. 
+  - `breed_crabs`: uses the functions in `diet` and `colors` to breed two crabs, resulting in a new `Crab`. 
     - You will want to add a new `breed` function to `Crab` to avoid exposing `Crab` implementation details. 
     - The new `Crab` should have its diet selected randomly using the provided `Diet::random_diet`.
     - The new `Crab` should have its color computed by `Color::cross` from before.
