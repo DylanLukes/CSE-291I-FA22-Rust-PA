@@ -10,7 +10,7 @@ pub enum Diet {
 
 impl Diet {
     pub fn random_diet() -> Diet {
-        // This brings the names in Food into scope, so we can write
+        // This brings the names in Diet into scope, so we can write
         // `Fish` rather than `Diet::Fish` (and so on) below.
         use Diet::*;
         let r: u32 = rand::rand32() % 3;
